@@ -1,0 +1,3 @@
+model_checkpoint_path: "i210_l512_v2.369.ckpt"
+all_model_checkpoint_paths: "i200_l512_v2.381.ckpt"
+all_model_checkpoint_paths: "i210_l512_v2.369.ckpt"
