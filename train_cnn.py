@@ -42,22 +42,22 @@ num_class = len(train_data.class_indices)
 
 models.Sequential([
 
-    layers.Conv2D(32,(3,3),activation = 'relu',input_shape = (128,128,3)), #------layer 1
+    layers.Conv2D(32,(3,3),activation = 'relu',input_shape = (128,128,3),padding = 'same'), #------layer 1
     layers.MaxPooling2D(2,2),
 
-    layers.Conv2D(64,(3,3),activation = 'relu'), #------layer 2
+    layers.Conv2D(64,(3,3),activation = 'relu',padding = 'same'), #------layer 2
     layers.MaxPooling2D(2,2),
 
-    layers.Conv2D(128,(3,3),activation = 'relu'), #------layer 3
+    layers.Conv2D(128,(3,3),activation = 'relu',padding = 'same'), #------layer 3
     layers.MaxPooling2D(2,2),
 
-    layers.Conv2D(32,(3,3),activation = 'relu'), #------layer 4
+    layers.Conv2D(32,(3,3),activation = 'relu',padding = 'same'), #------layer 4
     layers.MaxPooling2D(2,2),
 
-    layers.Conv2D(254,(3,3),activation = 'relu'), #------layer 5
+    layers.Conv2D(254,(3,3),activation = 'relu',padding = 'same'), #------layer 5
     layers.MaxPooling2D(2,2),
 
-    layers.Conv2D(128,(3,3),activation = 'relu'), #------layer 6
+    layers.Conv2D(128,(3,3),activation = 'relu',padding = 'same'), #------layer 6
     layers.MaxPooling2D(2,2),
 
     layers.Flatten(),
